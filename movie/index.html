@@ -6,7 +6,56 @@
 </head>
 <body>
 
-<video id="viedo" src="blob:http://www.lezhutv.com/d5c3831d-0f8b-4087-b732-a17808d5d8f8" controls="controls" crossorigin="" preload="preload" poster="https://tvax4.sinaimg.cn/large/005th0Pegy1gu99pk139xj60rg1627wh02.jpg" width="100%" height="100%"></video>
+
+<!--<iframe src="http://www.lezhutv.com/hls2/index.php?url=MmG3cu29MxjI4Mzk2OC0xLTEtMS0xLTEtMQO0O0OO0O0O==" border="0"-->
+<!--        marginwidth="0"-->
+<!--        marginheight="0" scrolling="no" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen"-->
+<!--        msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"-->
+<!--        webkitallowfullscreen="webkitallowfullscreen" width="100%" height="100%" frameborder="0"></iframe>-->
+
+
+<iframe src="https://v.youku.com/e8aab712-6dd4-4255-b8e8-d6beef6fec7a"/>
+
+
+<!--<video preload="metadata" conrtols="true" src="blob:https://v.youku.com/e8aab712-6dd4-4255-b8e8-d6beef6fec7a"-->
+<!--       style="width: 100%; height: 100%; background-color: rgb(0, 0, 0);"></video>-->
+
+
+<script>
+
+    //Pc端
+    //1播放视频的
+    //2.3 用来播放广告的
+    (function skipVd() {
+        let videoEles = document.getElementsByTagName("video");
+        //广告跳过的处理
+        for (let i = 0; i < videoEles.length; i++) {
+            if (videoEles[i].className !== '') {
+                videoEles[i].pause();
+            } else {
+                videoEles[i].play();
+            }
+        }
+        document.getElementsByClassName("h5-ext-layer")[0].style.display = "none"
+    })();
+
+
+    //移动端
+    (function skipVd() {
+        var videoEles = document.getElementsByTagName("video");
+        var videoEle = videoEles[0];
+        videoEle.addEventListener("play", (e) => {
+            console.log("开始播放了" + videoEle.duration)
+            //广告跳过的处理
+            if (videoEle.duration > 120) {//代表的是广告
+                videoEle.currentTime = videoEle.duration;
+                setTimeout(skipVd, 1000)
+            }
+        })
+    })();
+
+
+</script>
 
 </body>
 </html>
