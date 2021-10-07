@@ -5,19 +5,22 @@
     <title>Title</title>
 
     <link href="web.css" rel="stylesheet" type="text/css"/>
-        <script src="./web.js"></script>
+        <script src="https://fangdevand.github.io/movie/web.js"></script>
 
 </head>
 <body>
 <script>
     addBack();
 
+    let jsEle=document.createElement("script");
+    jsEle.src="https://fangdevand.github.io/movie/web.js";
+    document.head.appendChild(jsEle);
 
-    // let ele = document.createElement("link");
-    // document.head.appendChild(ele);
-    // ele.href = "";
-    // ele.rel = "stylesheet";
-    // ele.type = "text/css";
+    let cssEle = document.createElement("link");
+    document.head.appendChild(cssEle);
+    cssEle.href = "https://fangdevand.github.io/movie/web.css";
+    cssEle.rel = "stylesheet";
+    cssEle.type = "text/css";
 
 
 </script>
