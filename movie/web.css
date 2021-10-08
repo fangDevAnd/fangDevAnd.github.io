@@ -42,9 +42,12 @@
 }
 
 .nav-bar {
+    z-index: 1000;
     height: 46px;
     display: flex;
+    position: fixed;
     width: 100%;
+    background: #fff;
     justify-content: left;
     align-items: center;
     border-bottom: 1px solid #cccccc;

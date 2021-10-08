@@ -21,10 +21,18 @@ let addBack = () => {
 let addNavbar = () => {
     let kk = document.createElement("div");
     kk.innerHTML = "<div class=\"nav-bar\">\n" +
-        "    <i class=\"iconfont theme_cr mg-l-10\">&#xe601;</i>\n" +
+        "    <i class=\"iconfont theme_cr mg-l-10\" onclick='gotoHeme()'>&#xe601;</i>\n" +
         "    <span class=\"theme_cr\">返回</span>\n" +
         "</div>";
+
     document.body.insertBefore(kk, document.body.firstChild);
+}
+
+/**
+ * 回到首页
+ */
+let gotoHeme = () => {
+    window.location.href = "http://192.168.0.107:8080/";
 }
 
 
