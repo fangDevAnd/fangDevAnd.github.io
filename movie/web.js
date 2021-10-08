@@ -57,7 +57,7 @@ let addEleBody = (tag, className, id) => {
     let ele = document.createElement(tag);
     ele.className = className;
     ele.id = id;
-    document.body.appendChild(ele);
+    document.documentElement.appendChild(ele);
     return ele;
 }
 
@@ -112,7 +112,7 @@ let links = [
 ]
 
 for (let i = 0; i < links.length; i++) {
-    if (document.domain.indexOf(links[i].link) !== -1) {
+    if (links[i].link.indexOf(document.domain) !== -1) {
         //找到了对应的链接文件
         //加载对应的js文件和css文件
         let pla = links[i].name;
