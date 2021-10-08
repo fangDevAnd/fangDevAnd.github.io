@@ -22,7 +22,7 @@
     height: 36px;
     background: #4fc08d;
     position: fixed;
-    bottom: 60px;
+    top: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;

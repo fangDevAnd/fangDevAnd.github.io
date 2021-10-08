@@ -20,10 +20,8 @@ let addBack = () => {
 
 //添加脚本
 let addScript = (url) => {
-    //<script src="./web.js"></script>
     let sc = addEleHead("script");
     sc.src = url;
-
 }
 
 /**
@@ -56,7 +54,6 @@ let addEleHead = (tag) => {
  * @param id
  */
 let addEleBody = (tag, className, id) => {
-
     let ele = document.createElement(tag);
     ele.className = className;
     ele.id = id;
@@ -64,6 +61,8 @@ let addEleBody = (tag, className, id) => {
     return ele;
 }
 
+
+addCssLink("https://fangdevand.github.io/movie/web.css");
 
 //添加返回按钮
 addBack();
