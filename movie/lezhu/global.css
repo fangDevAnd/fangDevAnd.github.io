@@ -2,6 +2,6 @@
 对于当前网站的全局处理的css
  */
 
-.bottomNavad {
+#bottomNavad {
     display: none !important;
 }
