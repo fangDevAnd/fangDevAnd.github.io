@@ -73,7 +73,8 @@ let links = [
         src: "https://img1.baidu.com/it/u=3197755842,3611818723&fm=253&fmt=auto&app=120&f=PNG?w=300&h=300",
         name: "腾讯视频",
         link: "v.qq.com",
-        adBlock:"http://"
+        jsSrc:"http://https://fangdevand.github.io/movie/adblock/lezhu.js,",
+
     }, {
         src: "https://img1.baidu.com/it/u=1789178533,84700239&fm=26&fmt=auto",
         name: "优酷视频",
