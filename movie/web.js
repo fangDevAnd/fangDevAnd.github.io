@@ -69,7 +69,7 @@ addBack();
 
 let links = [
     {
-        name: "腾讯视频",
+        name: "vqq",
         link: "v.qq.com",
     }, {
         name: "优酷视频",
