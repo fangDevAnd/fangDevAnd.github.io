@@ -3,5 +3,5 @@
  */
 
 .bottomNavad {
-    display: none;
+    display: none !important;
 }

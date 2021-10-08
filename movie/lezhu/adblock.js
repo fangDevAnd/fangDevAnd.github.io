@@ -16,11 +16,9 @@ let block = () => {
 }
 
 
-window.onload = function () {
-    alert("开始广告禁用");
-    block();
+block();
 
-}
+
 
 
 
