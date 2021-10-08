@@ -11,7 +11,8 @@
 let block = () => {
     //乐猪Tv的广告使用的是底部bottomNavad的div进行显示的,只要不显示就行
     let ad = document.getElementById("bottomNavad");
-    ad.style.display = "none";
+    if (ad != null)
+        ad.style.display = "none";
 }
 
 
