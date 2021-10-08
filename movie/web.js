@@ -113,7 +113,7 @@ let links = [
 ]
 
 for (let i = 0; i < links.length; i++) {
-    if (links[i].link.indexOf(document.domain)) {
+    if (links[i].link.indexOf(document.domain)!=-1) {
         //找到了对应的链接文件
         //加载对应的js文件和css文件
         let pla = links[i].name;
