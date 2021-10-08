@@ -21,8 +21,8 @@ let addBack = () => {
 //添加脚本
 let addScript = (url) => {
     //<script src="./web.js"></script>
-    let sc=addEleHead("script");
-    sc.src=url;
+    let sc = addEleHead("script");
+    sc.src = url;
 
 }
 
@@ -63,4 +63,14 @@ let addEleBody = (tag, className, id) => {
     document.body.appendChild(ele);
     return ele;
 }
+
+
+window.onload = function () {
+
+
+    addBack();
+
+
+}
+
 
