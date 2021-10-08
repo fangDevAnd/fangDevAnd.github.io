@@ -14,8 +14,16 @@ function hiddenIndexAppBanner() {
     }
 }
 
+function hiddenOpenApp(){
+    let eles = document.getElementsByClassName("site-top__open-app");
+    if (eles.length > 0) {
+        eles[0].style.display = "none";
+    }
+}
+
+
 
 
 hiddenIndexAppBanner();
-
+hiddenOpenApp();
 

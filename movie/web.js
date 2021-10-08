@@ -13,7 +13,7 @@ let addBack = () => {
     let ele = addEleBody("div", "backItem", "_global_back");
     ele.innerHTML = "<i class=\"iconfont\">&#xe600;</i>";
     ele.onclick = function () {
-        window.location.href = "https://fangdevand.github.io/movie/";
+        window.location.href = "http://192.168.0.107:8080/";
     }
 }
 

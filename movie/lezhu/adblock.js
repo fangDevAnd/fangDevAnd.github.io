@@ -16,9 +16,7 @@ let block = () => {
 }
 
 
-setInterval(() => {
-    block();
-}, 50);
+block();
 
 
 
