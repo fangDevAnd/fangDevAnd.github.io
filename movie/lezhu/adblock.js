@@ -10,8 +10,7 @@
  */
 let block = () => {
     //乐猪Tv的广告使用的是底部bottomNavad的div进行显示的,只要不显示就行
-    var iframe = document.getElementById('video_frame').contentWindow.document;
-    let ad = iframe.getElementById("bottomNavad");
+    let ad = document.getElementById("bottomNavad");
     ad.style.display = "none";
 }
 
