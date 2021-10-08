@@ -18,6 +18,16 @@ let addBack = () => {
 }
 
 
+let addNavbar = () => {
+    let kk = document.createElement("div");
+    kk.innerHTML = "<div class=\"nav-bar\">\n" +
+        "    <i class=\"iconfont theme_cr mg-l-10\">&#xe601;</i>\n" +
+        "    <span class=\"theme_cr\">返回</span>\n" +
+        "</div>";
+    document.body.insertBefore(kk, document.body.firstChild);
+}
+
+
 //添加脚本
 let addScript = (url) => {
     let sc = addEleHead("script");
@@ -57,15 +67,13 @@ let addEleBody = (tag, className, id) => {
     let ele = document.createElement(tag);
     ele.className = className;
     ele.id = id;
-    document.documentElement.appendChild(ele);
+    document.body.appendChild(ele);
     return ele;
 }
 
 
 addCssLink("https://fangdevand.github.io/movie/web.css");
 
-//添加返回按钮
-addBack();
 
 let links = [
     {
@@ -120,5 +128,11 @@ for (let i = 0; i < links.length; i++) {
         addScript("https://fangdevand.github.io/movie/" + pla + "/addump.js");
         addCssLink("https://fangdevand.github.io/movie/" + pla + "/global.css");
     }
+}
 
+
+window.onload = function () {
+//添加返回按钮
+//     addBack();
+    addNavbar();
 }
