@@ -21,7 +21,6 @@ function hiddenOpenApp() {
     }
 }
 
-
 let addNavbar = () => {
     let kk = document.createElement("div");
     kk.innerHTML = "<div class=\"nav-bar\">\n" +
@@ -32,7 +31,7 @@ let addNavbar = () => {
 }
 
 
-addNavbar();
+
 hiddenIndexAppBanner();
 hiddenOpenApp();
-
+addNavbar();
