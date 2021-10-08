@@ -20,7 +20,6 @@ let addBack = () => {
 
 //添加脚本
 let addScript = (url) => {
-
     //<script src="./web.js"></script>
     let sc=addEleHead("script");
     sc.src=url;
