@@ -116,5 +116,5 @@ for (let i = 0; i < links.length; i++) {
     if (links[i].link.indexOf(document.domain)) {
         //找到了对应的链接文件
     }
-    alert("当前的domain" + document.domain);
+    document.write("当前的domain" + document.domain);
 }
