@@ -78,10 +78,10 @@ let links = [
         name: "vqq",
         link: "v.qq.com",
     }, {
-        name: "优酷视频",
+        name: "youku",
         link: "www.youku.com/"
     }, {
-        name: "爱奇艺",
+        name: "iqiyi",
         link: "www.iqiyi.com/"
     }, {
         name: "六间房",
