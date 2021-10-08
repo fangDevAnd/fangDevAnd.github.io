@@ -18,16 +18,6 @@ let addBack = () => {
 }
 
 
-let addNavbar = () => {
-    let kk = document.createElement("div");
-    kk.innerHTML = "<div class=\"nav-bar\">\n" +
-        "    <i class=\"iconfont theme_cr mg-l-10\" onclick='gotoHeme()'>&#xe601;</i>\n" +
-        "    <span class=\"theme_cr\">返回</span>\n" +
-        "</div>";
-
-    document.body.insertBefore(kk, document.body.firstChild);
-}
-
 /**
  * 回到首页
  */
@@ -139,8 +129,3 @@ for (let i = 0; i < links.length; i++) {
 }
 
 
-window.onload = function () {
-//添加返回按钮
-//     addBack();
-    addNavbar();
-}
