@@ -6,7 +6,7 @@
  */
 
 /**
- * 捕获乐猪Tv的广告
+ * 捕获乐猪Tv的广告ccv
  */
 let block = () => {
     //乐猪Tv的广告使用的是底部bottomNavad的div进行显示的,只要不显示就行
