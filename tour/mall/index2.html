@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .t-a-l {
+            text-align: left;
+        }
+
+        .mg-t-10 {
+            margin-top: 10px;
+        }
+
+        .cardView {
+            background-color: #ffffff;
+            padding-top: 5px;
+            border-top: 1px solid #ebedf0;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ebedf0;
+        }
+
+        .m-g-lr--10 {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+
+        .cardLine {
+            height: 10px;
+            background-color: #ebedf0;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        .mg-lr--10 {
+            margin-left: -10px !important;
+            margin-right: -10px !important;
+        }
+
+        .mglr-0 {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+
+        .flexRowVerticalCenter {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .mg-lr--5 {
+            margin-left: -5px !important;
+            margin-right: -5px !important;
+        }
+
+        .mg-b-5 {
+            margin-bottom: 5px;
+        }
+
+        .mg-t-5 {
+            margin-top: 5px;
+        }
+
+
+        .pd-6 {
+            padding: 6px !important;
+        }
+
+        .pd-10 {
+            padding: 10px !important;
+        }
+
+        .pd-8 {
+            padding: 8px !important;
+        }
+
+        .pd-l-10 {
+            padding-left: 10px !important;
+        }
+
+
+        .mg-l-5 {
+            margin-left: 5px;
+        }
+
+        .mg-l-10 {
+            margin-left: 10px !important;
+        }
+
+        .pd-lr-8 {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+        }
+
+        .pd-l-0 {
+            padding-left: 0px !important;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .bd-rd-10 {
+            border-radius: 10px !important;
+        }
+
+        .bd-cr-888 {
+            border-color: #888888 !important;
+        }
+
+        .bd-wid-1 {
+            border-width: 1px;
+        }
+
+        .pd-r-0 {
+            padding-right: 0px !important;
+        }
+
+        .pd-r-29 {
+            padding-left: 0px !important;
+        }
+
+        .pd-l-29 {
+            padding-right: 0px !important;
+        }
+
+        .pd-t-9 {
+            padding-top: 9px;
+        }
+
+        .pd-l-75 {
+            padding-left: 75px !important;
+        }
+
+        .wid-484 {
+            width: 484px !important;
+        }
+
+        .hg-40 {
+            height: 40px !important;
+        }
+
+        .bd-888 {
+            border: 1px solid rgba(136, 136, 136, 1);
+        }
+
+        .mg-l-75 {
+            margin-left: 75px !important;
+        }
+
+        .mg-l-21 {
+            margin-left: 21px !important;
+        }
+
+        .mg-l-50 {
+            margin-left: 50px !important;
+        }
+
+        .pd-6 {
+            padding: 6px !important;
+        }
+
+        .bd-0 {
+            border: 0px !important;
+        }
+
+        .just-content-center {
+            justify-content: center !important;
+        }
+
+
+        .cr-888 {
+            color: #888888 !important;
+        }
+
+        .cr-484848 {
+            color: #484848 !important;
+        }
+
+        .dis-inblock {
+            display: inline-block !important;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1;
+            -webkit-box-flex-group: 1;
+        }
+
+        .cr-9a9a9a {
+            color: #9a9a9a;
+        }
+
+        .pd-l-5 {
+            padding-left: 5px;
+        }
+
+        .pd-r-5 {
+            padding-right: 5px;
+        }
+
+        .cr-fff {
+            color: #FFFFFF !important;
+        }
+
+        .fs-12 {
+            font-size: 12px !important;
+        }
+
+
+        .cr-212121 {
+            color: #212121 !important;
+        }
+
+        .fs-16 {
+            font-size: 16px !important;
+        }
+
+        .pd-5 {
+            padding: 5px !important;
+        }
+
+        .fs-20 {
+            font-size: 20px !important;
+        }
+
+        .mg-r-10 {
+            margin-right: 10px;
+        }
+
+        .bg-f27255 {
+            background-color: #F27255 !important;
+        }
+
+        .mg-b-10 {
+            margin-bottom: 10px;
+        }
+
+        .pd-b-10 {
+            padding-bottom: 10px;
+        }
+
+        .cr-f27255 {
+            color: #F27255 !important;
+        }
+
+        .mg-lr--9 {
+            margin-left: -9px !important;
+            margin-right: -9px !important;
+        }
+
+        .bg-fff {
+            background-color: #FFFFFF;
+        }
+
+
+        .fw-b {
+            font-weight: bold;
+        }
+
+        .mg-r-40 {
+            margin-right: 40px;
+        }
+
+        .width-100 {
+            width: 100px !important;
+        }
+
+        .width-50p {
+            width: 50% !important;
+        }
+
+        .cr-b2b2b2 {
+            color: #b2b2b2 !important;
+        }
+
+        .width-70p {
+            width: 70% !important;
+        }
+
+
+        .mg-b-50 {
+            margin-bottom: 50px;
+        }
+
+        .bd-888 {
+            border: 1px solid rgba(136, 136, 136, 1);
+        }
+
+        .mg-l-75 {
+            margin-left: 75px !important;
+        }
+
+        .mg-l-21 {
+            margin-left: 21px !important;
+        }
+
+        .mg-l-50 {
+            margin-left: 50px !important;
+        }
+
+        .pd-6 {
+            padding: 6px !important;
+        }
+
+        .bd-0 {
+            border: 0px !important;
+        }
+
+        .cr-888 {
+            color: #888888 !important;
+        }
+
+        .cr-484848 {
+            color: #484848 !important;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1 !important;
+        }
+
+        .cr-9a9a9a {
+            color: #9a9a9a;
+        }
+
+        .pd-l-5 {
+            padding-left: 5px;
+        }
+
+        .pd-r-5 {
+            padding-right: 5px;
+        }
+
+        .mg-lr--8 {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+
+        .pd-lr-9 {
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+
+        .fs-30 {
+            font-size: 30px !important;
+        }
+
+
+        .mg-lr-9 {
+            margin-right: 9px;
+            margin-left: 9px;
+        }
+
+        .mg-t-40 {
+            margin-top: 40px;
+        }
+
+        .mg-b-20 {
+            margin-bottom: 20px;
+        }
+
+        .mg-t-20 {
+            margin-top: 20px;
+        }
+
+
+        .mg-r-20 {
+            margin-right: 20px;
+        }
+
+        .br-rd-10 {
+            border-radius: 10px !important;
+        }
+
+        .mg-l--9 {
+            margin-left: -9px;
+        }
+
+        .mg-r-4 {
+            margin-right: 4px !important;
+        }
+
+        .mg-center {
+            margin: 0 auto;
+        }
+
+        .fs-40 {
+            font-size: 40px;
+        }
+
+        .fs-45 {
+            font-size: 45px;
+        }
+
+        .cr-440802 {
+            color: #440802 !important;
+        }
+
+        .cr-642421 {
+            color: #642421 !important;
+        }
+
+        .pd-l-20 {
+            padding-left: 20px !important;
+        }
+
+        .pd-t-5 {
+            padding-top: 5px;
+        }
+
+        .pd-b-15 {
+            padding-bottom: 15px;
+        }
+
+        .pd-r-20 {
+            padding-right: 20px !important;
+        }
+
+
+        .iconfont_theme {
+            font-family: "iconfont_theme" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+        @font-face {
+            font-family: 'iconfont_theme';  /* project id 1754629 */
+            src: url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.eot');
+            src: url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.woff2') format('woff2'),
+            url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.woff') format('woff'),
+            url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.svg#iconfont_theme') format('svg');
+        }
+
+        .theme1 .carousel-item img {
+            width: 100%;
+        }
+
+
+        .theme1 .container-fluid, .theme1 .container {
+            padding-left: 0px;
+            padding-right: 0px;
+            box-sizing: border-box;
+        }
+
+        .theme1 .container {
+            max-width: 1200px;
+        }
+
+        .theme1 .leftMenu {
+            position: relative;
+            left: -100px;
+        }
+
+        .theme1 .classItem {
+            font: 14px arial;
+        }
+
+        .theme1 .line {
+            width: 60px;
+            background-color: #111111;
+            height: 1px;
+        }
+
+        .theme1 .head {
+            height: 250px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33) !important;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="theme1">
+
+    <!--
+     left menu
+    -->
+    <div class="container">
+        <div class="leftMenu">
+            <div class="mg-t-40 " style="position: fixed">
+                <div class="mg-b-50 classItem active">所有宝贝
+                    <div class="line mg-t-5"></div>
+                </div>
+                <div class="classItem mg-b-5">New新品上架
+
+                </div>
+                <div class="classItem mg-b-5">人气单品</div>
+                <div class="classItem mg-b-5">外套</div>
+                <div class="classItem mg-b-5">上衣</div>
+                <div class="classItem mg-b-5">裙装</div>
+                <div class="classItem mg-b-5">裤装</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="head container pd-b-15 pd-t-5 pd-l-20 pd-r-20">
+        <div class=""
+             style="height: 100%;border:5px solid #615853;display: flex;align-items: center;justify-content: center"
+             align="center">
+            <div class="fs-40" style="color: #2f1409">
+                <span>点击进入大叔家的女鞋店 >></span><br>
+                <span>- Click to enter -</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div align="center">
+        <img src="//gdp.alicdn.com/imgextra/i4/2824587427/O1CN01IaHO9c24jcAS9ohFU_!!2824587427.jpg" alt="">
+    </div>
+    <div align="center">
+        <img src="//gdp.alicdn.com/imgextra/i1/2824587427/O1CN01opqH6624jcAU6LI3q_!!2824587427.jpg" alt="">
+    </div>
+
+    <div align="center">
+        <img src="//gdp.alicdn.com/imgextra/i3/2824587427/O1CN01KUAFg824jcAXY7wAc_!!2824587427.jpg" alt="">
+    </div>
+
+    <div align="center">
+        <img src="https://gdp.alicdn.com/imgextra/i3/2824587427/O1CN01DIQ0kj24jcAYbTEhw_!!2824587427.jpg" alt="">
+    </div>
+
+    <div align="center">
+        <img src="https://gdp.alicdn.com/imgextra/i2/2824587427/O1CN01T6vtjg24jcAYDTSwz_!!2824587427.jpg" alt="">
+    </div>
+
+    <div align="center">
+        <img src="https://gdp.alicdn.com/imgextra/i2/2824587427/O1CN01T6vtjg24jcAYDTSwz_!!2824587427.jpg" alt="">
+    </div>
+
+
+</div>
+
+
+<script>
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<!--    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"-->
+<!--            class="linkResource"></script>-->
+<!--    <script type="text/javascript" src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"-->
+<!--            class="linkResource"></script>-->
+<!--    <script type="text/javascript" src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"-->
+<!--            class="linkResource"></script>-->
+<!--    <script type="text/javascript"-->
+<!--            src="http://oss.zerdocean.com/themescript?Expires=1681477314&OSSAccessKeyId=LTAI4FjBg6oTtXd4aXNuFEtC&Signature=7mMyqrWkCBySaFroekOpm%2FskgiM%3D"-->
+<!--            class="linkResource"></script>-->
+<!--    <link rel="stylesheet" class="linkResource"-->
+<!--          href="http://oss.zerdocean.com/tmenecss?Expires=1681477312&OSSAccessKeyId=LTAI4FjBg6oTtXd4aXNuFEtC&Signature=NbCsN0lkyzK383qnodJePiOLK1k%3D">-->
+<!--    <link rel="stylesheet" class="linkResource"-->
+<!--          href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">-->
+
+    <script src="autoFlush.js"></script>
+    <style>
+
+
+        .t-a-l {
+            text-align: left;
+        }
+
+        .mg-t-10 {
+            margin-top: 10px;
+        }
+
+        .cardView {
+            background-color: #ffffff;
+            padding-top: 5px;
+            border-top: 1px solid #ebedf0;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ebedf0;
+        }
+
+        .m-g-lr--10 {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+
+        .cardLine {
+            height: 10px;
+            background-color: #ebedf0;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        .mg-lr--10 {
+            margin-left: -10px !important;
+            margin-right: -10px !important;
+        }
+
+        .mglr-0 {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+
+        .flexRowVerticalCenter {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .mg-lr--5 {
+            margin-left: -5px !important;
+            margin-right: -5px !important;
+        }
+
+        .mg-b-5 {
+            margin-bottom: 5px;
+        }
+
+        .mg-t-5 {
+            margin-top: 5px;
+        }
+
+
+        .pd-6 {
+            padding: 6px !important;
+        }
+
+        .pd-10 {
+            padding: 10px !important;
+        }
+
+        .pd-8 {
+            padding: 8px !important;
+        }
+
+        .pd-l-10 {
+            padding-left: 10px !important;
+        }
+
+
+        .mg-l-5 {
+            margin-left: 5px;
+        }
+
+        .mg-l-10 {
+            margin-left: 10px !important;
+        }
+
+        .pd-lr-8 {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+        }
+
+        .pd-l-0 {
+            padding-left: 0px !important;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .bd-rd-10 {
+            border-radius: 10px !important;
+        }
+
+        .bd-cr-888 {
+            border-color: #888888 !important;
+        }
+
+        .bd-wid-1 {
+            border-width: 1px;
+        }
+
+        .pd-r-0 {
+            padding-right: 0px !important;
+        }
+
+        .pd-r-29 {
+            padding-left: 0px !important;
+        }
+
+        .pd-l-29 {
+            padding-right: 0px !important;
+        }
+
+        .pd-t-9 {
+            padding-top: 9px;
+        }
+
+        .pd-l-75 {
+            padding-left: 75px !important;
+        }
+
+        .wid-484 {
+            width: 484px !important;
+        }
+
+        .hg-40 {
+            height: 40px !important;
+        }
+
+        .bd-888 {
+            border: 1px solid rgba(136, 136, 136, 1);
+        }
+
+        .mg-l-75 {
+            margin-left: 75px !important;
+        }
+
+        .mg-l-21 {
+            margin-left: 21px !important;
+        }
+
+        .mg-l-50 {
+            margin-left: 50px !important;
+        }
+
+        .pd-6 {
+            padding: 6px !important;
+        }
+
+        .bd-0 {
+            border: 0px !important;
+        }
+
+        .just-content-center {
+            justify-content: center !important;
+        }
+
+
+        .cr-888 {
+            color: #888888 !important;
+        }
+
+        .cr-484848 {
+            color: #484848 !important;
+        }
+
+        .dis-inblock {
+            display: inline-block !important;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1;
+            -webkit-box-flex-group: 1;
+        }
+
+        .cr-9a9a9a {
+            color: #9a9a9a;
+        }
+
+        .pd-l-5 {
+            padding-left: 5px;
+        }
+
+        .pd-r-5 {
+            padding-right: 5px;
+        }
+
+        .cr-fff {
+            color: #FFFFFF !important;
+        }
+
+        .fs-12 {
+            font-size: 12px !important;
+        }
+
+
+        .cr-212121 {
+            color: #212121 !important;
+        }
+
+        .fs-16 {
+            font-size: 16px !important;
+        }
+
+        .pd-5 {
+            padding: 5px !important;
+        }
+
+        .fs-20 {
+            font-size: 20px !important;
+        }
+
+        .mg-r-10 {
+            margin-right: 10px;
+        }
+
+        .bg-f27255 {
+            background-color: #F27255 !important;
+        }
+
+        .mg-b-10 {
+            margin-bottom: 10px;
+        }
+
+        .pd-b-10 {
+            padding-bottom: 10px;
+        }
+
+        .cr-f27255 {
+            color: #F27255 !important;
+        }
+
+        .mg-lr--9 {
+            margin-left: -9px !important;
+            margin-right: -9px !important;
+        }
+
+        .bg-fff {
+            background-color: #FFFFFF;
+        }
+
+
+        .fw-b {
+            font-weight: bold;
+        }
+
+        .mg-r-40 {
+            margin-right: 40px;
+        }
+
+        .width-100 {
+            width: 100px !important;
+        }
+
+        .width-50p {
+            width: 50% !important;
+        }
+
+        .cr-b2b2b2 {
+            color: #b2b2b2 !important;
+        }
+
+        .width-70p {
+            width: 70% !important;
+        }
+
+
+        .mg-b-50 {
+            margin-bottom: 50px;
+        }
+
+        .bd-888 {
+            border: 1px solid rgba(136, 136, 136, 1);
+        }
+
+        .mg-l-75 {
+            margin-left: 75px !important;
+        }
+
+        .mg-l-21 {
+            margin-left: 21px !important;
+        }
+
+        .mg-l-50 {
+            margin-left: 50px !important;
+        }
+
+        .pd-6 {
+            padding: 6px !important;
+        }
+
+        .bd-0 {
+            border: 0px !important;
+        }
+
+        .cr-888 {
+            color: #888888 !important;
+        }
+
+        .cr-484848 {
+            color: #484848 !important;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1 !important;
+        }
+
+        .cr-9a9a9a {
+            color: #9a9a9a;
+        }
+
+        .pd-l-5 {
+            padding-left: 5px;
+        }
+
+        .pd-r-5 {
+            padding-right: 5px;
+        }
+
+        .mg-lr--8 {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+
+        .pd-lr-9 {
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+
+        .fs-30 {
+            font-size: 30px !important;
+        }
+
+
+        .mg-lr-9 {
+            margin-right: 9px;
+            margin-left: 9px;
+        }
+
+        .mg-t-40 {
+            margin-top: 40px;
+        }
+
+        .mg-b-20 {
+            margin-bottom: 20px;
+        }
+
+        .mg-t-20 {
+            margin-top: 20px;
+        }
+
+
+        .mg-r-20 {
+            margin-right: 20px;
+        }
+
+        .br-rd-10 {
+            border-radius: 10px !important;
+        }
+
+        .mg-l--9 {
+            margin-left: -9px;
+        }
+
+        .mg-r-4 {
+            margin-right: 4px !important;
+        }
+
+        .mg-center {
+            margin: 0 auto;
+        }
+
+
+        /**
+        由于当前页面的独立性,为了避免全局的干扰,css 样式需要在外部添加唯一标识的 css标识
+
+         */
+
+        .theme1 .carousel-item {
+            height: 800px;
+        }
+
+        .theme1 .container-fluid, .theme1 .container {
+            padding-left: 0px;
+            padding-right: 0px;
+            box-sizing: border-box;
+        }
+
+        .theme1 .container {
+            max-width: 1200px;
+        }
+
+        .theme1 .proDis {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .theme1 .proItem {
+            box-sizing: border-box;
+            width: 33.3%;
+            margin-right: 10px;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .theme1 .proItem img {
+            width: 100%;
+        }
+
+
+        .theme1 .leftVip {
+            background-color: #c3a488;
+            color: #fff;
+            text-align: center;
+        }
+
+
+        .iconfont_theme {
+            font-family: "iconfont_theme" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+        @font-face {
+            font-family: 'iconfont_theme';  /* project id 1754629 */
+            src: url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.eot');
+            src: url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.woff2') format('woff2'),
+            url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.woff') format('woff'),
+            url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_1754629_5b57mg9s0c.svg#iconfont_theme') format('svg');
+        }
+
+
+        .theme1 .vip {
+            font-size: 80px;
+            text-align: center;
+            margin: 10px 0px;
+        }
+
+        .theme1 .dot {
+            width: 10px;
+            display: inline-block;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .theme1 .head {
+            font-size: 30px;
+        }
+
+        .theme1 .head1 {
+            font-size: 24px;
+        }
+
+        .theme1 .btnline {
+            border-bottom: 1px solid #fff;
+        }
+
+        .theme1 .dashline {
+            border-bottom: 1px dashed #fff;
+        }
+
+        .theme1 .flexHoriz {
+            display: flex;
+        }
+
+        .theme1 .flex-align-center {
+            align-items: center;
+        }
+
+        .theme1 .title {
+            font-size: 20px;
+
+        }
+
+        .theme1 .sortLine {
+            width: 30px;
+            height: 1px;
+            margin: 0 auto;
+            background-color: #111;
+        }
+
+        .payOrder {
+            background-color: #111;
+            padding: 3px 15px;
+            color: #fff;
+
+        }
+
+        .classbg {
+            background: #ccc;
+            padding: 100px;
+        }
+
+        .theme1 .classArea {
+            width: 800px;
+            margin-right: 150px;
+        }
+
+        .theme1 .classHead {
+            font-size: 27px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-align: right;
+        }
+
+        .theme1 .classContent {
+            display: flex;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .theme1 .classOne {
+            padding: 30px;
+            margin-right: 10px;
+            box-sizing: border-box;
+            flex-grow: 1;
+            background-color: #f1f0ee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .theme1 .classOne div {
+            flex-grow: 1;
+        }
+
+        .theme1 .classTwo {
+            flex-direction: column;
+        }
+
+        .theme1 .classOne .specific {
+            color: #bda988;
+        }
+
+
+        .theme1 .classOne img {
+            width: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="theme1">
+
+    <div class="container-fluid">
+
+
+        <!-- 轮播图片 -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- 轮播图片 -->
+            <div class="carousel-inner" >
+                <div class="carousel-item active" data-interval="2000">
+                    <img src="https://gdp.alicdn.com/imgextra/i3/30976729/O1CN01S8tkA71zZviGcGLw6_!!30976729.jpg">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="https://gdp.alicdn.com/imgextra/i4/30976729/O1CN01uZk5a61zZviHPL9ij_!!30976729.jpg">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="https://gdp.alicdn.com/imgextra/i4/30976729/O1CN01pi1UZ81zZviGcGUGZ_!!30976729.jpg">
+                </div>
+            </div>
+
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+
+        <!--
+         商品展示区域
+        -->
+        <div class="container">
+            <div class="proDis flexHoriz">
+                <div style="width: 300px" class="leftVip">
+                    <p class="iconfont_theme" align="center">&#xe601;</p>
+                    <p class="vip">
+                        VIP
+                    </p>
+                    <div align="center">
+                        <span class="dot"></span>
+                        <span class="head">0元入会</span>
+                        <span class="dot"></span>
+                    </div>
+
+                    <div class="head1">
+                        <span class="btnline">
+                        专属会员折扣 立即领取 <span class="iconfont_theme">&#xe725;</span>
+                        </span>
+
+                    </div>
+
+                    <div class="mg-t-20 dashline"></div>
+
+                    <div class="flexHoriz width-70p mg-center flex-align-center">
+                        <div>
+                            <span class="iconfont_theme fs-30">&#xe600;</span>
+                        </div>
+                        <div>
+                            <p>
+                                <span class="dot"></span>
+                                <span class="head fs-20">会员权益</span>
+                                <span class="dot"></span>
+                            </p>
+                            <div>
+                                点击查看 <span class="iconfont_theme">&#xe725;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="width: 900px;box-sizing: border-box;padding:15px;background-color:#c3a488"
+                     class="flexHoriz mg-l-10">
+                    <div class="proItem">
+                        <div class="title" align="center">
+                            PRO <span>01</span>
+                        </div>
+                        <div class="sortLine mg-b-10"></div>
+
+                        <img class="mg-t-10"
+                             src="https://oss.zerdocean.com/15824545795132.png?Expires=1677148983&OSSAccessKeyId=LTAI4FjBg6oTtXd4aXNuFEtC&Signature=Yv8IWVXwXS3350uWcv%2B%2B6naQG%2F8%3D"
+                             alt="">
+
+                        <div class="title fw-b mg-t-10 mg-b-10" align="center">满2999 送精美耳饰</div>
+                        <div class="flexHoriz just-content-center">
+                            <span class="payOrder">随满额订单拍下生效 <span class="iconfont_theme">&#xe725;</span></span>
+                        </div>
+                    </div>
+                    <div class="proItem">
+                        <div class="title" align="center">
+                            PRO <span>01</span>
+                        </div>
+                        <div class="sortLine mg-b-10"></div>
+
+                        <img
+                                class="mg-t-10"
+                                src="https://oss.zerdocean.com/15824545795132.png?Expires=1677148983&OSSAccessKeyId=LTAI4FjBg6oTtXd4aXNuFEtC&Signature=Yv8IWVXwXS3350uWcv%2B%2B6naQG%2F8%3D"
+                                alt="">
+
+                        <div class="title fw-b mg-t-10 mg-b-10" align="center">满2999 送精美耳饰</div>
+                        <div class="flexHoriz just-content-center">
+                            <span class="payOrder">随满额订单拍下生效 <span class="iconfont_theme">&#xe725;</span></span>
+                        </div>
+                    </div>
+                    <div class="proItem">
+                        <div class="title" align="center">
+                            PRO <span>01</span>
+                        </div>
+                        <div class="sortLine mg-b-10"></div>
+
+                        <img class="mg-t-10"
+                             src="https://oss.zerdocean.com/15824545795132.png?Expires=1677148983&OSSAccessKeyId=LTAI4FjBg6oTtXd4aXNuFEtC&Signature=Yv8IWVXwXS3350uWcv%2B%2B6naQG%2F8%3D"
+                             alt="">
+
+                        <div class="title fw-b mg-t-10 mg-b-10" align="center">满2999 送精美耳饰</div>
+                        <div class="flexHoriz just-content-center">
+                            <span class="payOrder">随满额订单拍下生效 <span class="iconfont_theme">&#xe725;</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+          商品分类区域
+        -->
+        <div class="container-fluid classbg" align="right">
+            <div class="classArea" align="left">
+                <div class="classHead">
+                    <span>CLASSIFY /</span>
+                    <span>类目专区</span>
+                </div>
+                <div class="classContent">
+                    <div class="classOne">
+                        <div align="center">
+                            <div class="title">外套</div>
+                            <div class="specific">Coat</div>
+                        </div>
+                        <div align="center">
+                            <img src="http://img.alicdn.com/imgextra/i4/751348535/O1CN013DsjpP2Cv4wM7fSiH_!!751348535-0-beehive-scenes.jpg_250x250xz.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="classOne">
+                        <div align="center">
+                            <div class="title">外套</div>
+                            <div class="specific">Coat</div>
+                        </div>
+                        <div align="center">
+                            <img src="http://img.alicdn.com/imgextra/i4/751348535/O1CN013DsjpP2Cv4wM7fSiH_!!751348535-0-beehive-scenes.jpg_250x250xz.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="classContent">
+                    <div class="classOne">
+                        <div align="center">
+                            <div class="title">外套</div>
+                            <div class="specific">Coat</div>
+                        </div>
+                        <div align="center">
+                            <img src="http://img.alicdn.com/imgextra/i4/751348535/O1CN013DsjpP2Cv4wM7fSiH_!!751348535-0-beehive-scenes.jpg_250x250xz.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="classOne">
+                        <div align="center">
+                            <div class="title">外套</div>
+                            <div class="specific">Coat</div>
+                        </div>
+                        <div align="center">
+                            <img src="http://img.alicdn.com/imgextra/i4/751348535/O1CN013DsjpP2Cv4wM7fSiH_!!751348535-0-beehive-scenes.jpg_250x250xz.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="classOne classTwo">
+                        <img src="http://img.alicdn.com/imgextra/i4/751348535/O1CN013DsjpP2Cv4wM7fSiH_!!751348535-0-beehive-scenes.jpg_250x250xz.jpg"
+                             alt="">
+                        <div>外套</div>
+                        <div>Coat</div>
+                    </div>
+                    <div class="classOne classTwo">
+                        <img src="http://img.alicdn.com/imgextra/i4/751348535/O1CN013DsjpP2Cv4wM7fSiH_!!751348535-0-beehive-scenes.jpg_250x250xz.jpg"
+                             alt="">
+                        <div>外套</div>
+                        <div>Coat</div>
+                    </div>
+                    <div class="classOne classTwo">
+                        <img src="http://img.alicdn.com/imgextra/i4/751348535/O1CN013DsjpP2Cv4wM7fSiH_!!751348535-0-beehive-scenes.jpg_250x250xz.jpg"
+                             alt="">
+                        <div class="title">外套</div>
+                        <div class="specific">Coat</div>
+                    </div>
+                    <div class="classOne classTwo">
+                        <img src="http://img.alicdn.com/imgextra/i4/751348535/O1CN013DsjpP2Cv4wM7fSiH_!!751348535-0-beehive-scenes.jpg_250x250xz.jpg"
+                             alt="">
+                        <div class="title">外套</div>
+                        <div class="specific">Coat</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+
+        -->
+        <div class="container-fluid">
+            <img style="width: 100%"
+                 src="http://gdp.alicdn.com/imgextra/i4/30976729/O1CN01UctHbl1zZviE5huLd_!!30976729.jpg" alt="">
+        </div>
+
+        <div class="container-fluid">
+            <img style="width: 100%"
+                 src="//gdp.alicdn.com/imgextra/i1/30976729/O1CN01CEy1FP1zZvihgal6O_!!30976729.jpg"
+                 alt="">
+        </div>
+    </div>
+</div>
+
+<script>
+
+    window.onload = function () {
+        $('.carousel').carousel()
+    }
+</script>
+
+</body>
+</html>
